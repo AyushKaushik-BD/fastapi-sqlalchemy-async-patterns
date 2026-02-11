@@ -149,6 +149,8 @@ If you have **4 Gunicorn Workers**, and each worker creates its own engine, you 
 
 If your traffic spikes and your workers try to open more connections than your database allows (e.g., Postgres `max_connections`), your API will hang and then crash with a TimeoutError.
 
+*Checkout why* [*Uvicorn Health Checks Fail Under Load*](https://www.logiclooptech.dev/uvicorn-health-check-failure-kubernetes-fix) *and how to fix?*
+
 **The Fix:**
 
 1. **Calculate your limits:** Ensure `(Workers * Pool Size) < DB Max Connections`.
