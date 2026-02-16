@@ -45,6 +45,8 @@ In production, we use **Gunicorn** (Green Unicorn) as the supervisor.
 * **Uvicorn (The Worker):** It acts as a "Worker Class" for Gunicorn, running your actual asynchronous Python code.
     
 
+Connection pooling issues often come from long-running sessions rather than bad pool settings. I wrote a deep dive on [detecting session leaks in FastAPI here.](https://hashnode.com/post/cmlmm6nvn000h02la0y4c4ncx)
+
 ### The Production Command
 
 Don't just run this in your terminal. Put this in your `Dockerfile` or `entrypoint.sh`:
