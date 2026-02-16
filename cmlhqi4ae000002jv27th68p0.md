@@ -70,6 +70,8 @@ It was just starved.
 
 > This failure pattern is extremely common in async Python services running behind Kubernetes.
 
+If your readiness probes start timing out randomly, it might not be Kubernetes — your connection pool could be exhausted by leaked sessions. Here’s [how to detect and fix them](https://hashnode.com/post/cmlmm6nvn000h02la0y4c4ncx).
+
 # Mistake #1: “Deep” Health Checks
 
 This is the most common failure pattern.
