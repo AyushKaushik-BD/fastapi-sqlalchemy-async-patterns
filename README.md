@@ -21,6 +21,15 @@ If you’ve hit issues like:
 
 This repository explains **why those issues happen and how to avoid them by design**.
 
+## Deep-dive write-ups
+
+Each of these failure modes has a full write-up on my blog:
+
+- [Fixing SQLAlchemy MissingGreenlet in FastAPI (Async Explained)](https://www.logiclooptech.dev/fixing-sqlalchemy-missinggreenlet-error-in-fastapi-async-explained/)
+- [Fixing "QueuePool limit reached": Debugging DB Connection Leaks](https://www.logiclooptech.dev/fixing-queuepool-limit-reached-debugging-db-connection-leaks-in-fastapi/)
+- [FastAPI Session Leak Detection in Production](https://www.logiclooptech.dev/fastapi-session-leak-detection-sqlalchemy-long-running/)
+- [FastAPI Lifespan vs Startup Events](https://www.logiclooptech.dev/fastapi-lifespan-vs-startup-events/)
+
 ---
 
 ## Why This Repository Exists
